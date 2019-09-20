@@ -22,13 +22,24 @@ Partial Class Frm_Principal
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.Btn_Clique = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'Btn_Clique
+        '
+        Me.Btn_Clique.Location = New System.Drawing.Point(12, 51)
+        Me.Btn_Clique.Name = "Btn_Clique"
+        Me.Btn_Clique.Size = New System.Drawing.Size(163, 39)
+        Me.Btn_Clique.TabIndex = 0
+        Me.Btn_Clique.Text = "Clique Aqui"
+        Me.Btn_Clique.UseVisualStyleBackColor = True
         '
         'Frm_Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Btn_Clique)
         Me.Name = "Frm_Principal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Principal"
@@ -36,4 +47,5 @@ Partial Class Frm_Principal
 
     End Sub
 
+    Friend WithEvents Btn_Clique As Button
 End Class
